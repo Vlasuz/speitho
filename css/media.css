@@ -1,0 +1,133 @@
+@media screen and (max-width:1200px) {
+  .services__block {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .services__item {
+    width: calc(25% - 20px);
+    margin: 10px
+  }
+}
+@media screen and (max-width:992px) {
+  .services__item {
+    width: calc(33.3333333333% - 20px)
+  }
+  .sides {
+    display: block
+  }
+  .page-index__main .lft {
+    margin: 0
+  }
+  .page-first-time-here__list ul {
+    margin: 0 -10px
+  }
+  .page-first-time-here__list li {
+    margin: 0 10px
+  }
+  .page-index__rht img {
+    margin: 0 auto;
+    max-width: 431px;
+    width: 100%
+  }
+  .page-first-time-here__main .rht,
+  .page-index__rht {
+    margin: 0;
+    text-align: center;
+    margin-top: 20px
+  }
+}
+@media screen and (max-width:768px) {
+  .services__item {
+    width: calc(50% - 20px)
+  }
+  .page-first-time-here__list li {
+    margin: 0
+  }
+  .page-first-time-here__list ul {
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px
+  }
+  footer .wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  .page-index__main .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px
+  }
+  .page-first-time-here__main h1,
+  .page-index h1 {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 20px
+  }
+  .page-index__main .rht img {
+    max-width: 431px;
+    width: 100%
+  }
+  .page-index__main li {
+    margin-bottom: 10px
+  }
+  .page-index__main li,
+  p {
+    font-size: 14px;
+    line-height: normal
+  }
+  .mb-100 {
+    margin-bottom: 80px
+  }
+  .blockquotes img {
+    margin-bottom: 10px
+  }
+}
+@media screen and (max-width:576px) {
+  .mb-100 {
+    margin-bottom: 50px
+  }
+  .blockquotes {
+    padding: 20px 0
+  }
+  h2 {
+    margin-bottom: 20px
+  }
+  .page-first-time-here__team h2,
+  h2 {
+    font-size: 20px
+  }
+  .blockquotes p {
+    font-size: 16px
+  }
+  .button-empty,
+  .button-full {
+    padding: 10px;
+    font-size: 12px;
+    line-height: normal
+  }
+  .header__languages {
+    margin-left: 10px
+  }
+  .header__logo {
+    max-width: 40px
+  }
+  .services__item p {
+    font-size: 16px
+  }
+  .services__item a {
+    padding: 12px
+  }
+  .services__item {
+    height: 200px
+  }
+  .services__item img {
+    height: 70%;
+    -o-object-fit: contain;
+    object-fit: contain
+  }
+}
