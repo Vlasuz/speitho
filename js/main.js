@@ -27,6 +27,13 @@ akkordion.forEach((item) => {
 })
 
 
+document.querySelectorAll('.li__block').forEach((item) => {
+
+	if( item.querySelector('span, b').offsetHeight > 190 ){
+		item.classList.add('li__block_mini')
+	}
+
+})
 
 
 

@@ -13,6 +13,9 @@
 	.services__item{
 		width: calc(100% / 3 - 20px);
 	}
+	.page-marketing__list li{
+		padding: 30px;
+	}
 	.page-training__counts .counts__item .item__top span{
 		font-size: 50px;
 		line-height: normal;
@@ -38,15 +41,11 @@
 	.page-tips .mb-100{
 		margin-bottom: 100px;
 	}
-	.page-training h1{
-		font-size: 30px;
-	}
 	.page-training h2{
 		margin-bottom: 20px;
 		font-size: 30px;
 	}
-	.page-training .subtitle,
-	.page-training__main p{
+	.page-training .subtitle{
 		font-size: 16px;
 	}
 	.page-tips__item .item__num{
@@ -59,7 +58,7 @@
 		margin-top: -10px;
 		margin-bottom: -10px;
 	}
-	.page-tips__item .item__content *{
+	.page-tips__item .item__content .item__inner{
 		margin: 10px 25px;
 	}
 	.sides{
@@ -94,22 +93,96 @@
 	.page-seminars__black h2{
 		font-size: 30px;
 	}
-	.page-seminars__main p{
+	.page-seminars__main a{
+		margin-top: 30px;
+	}
+	.main p{
 		font-size: 16px;
 	}
-	.page-seminars__main h1{
+	.main h1{
 		font-size: 40px;
 		line-height: normal;
 		margin-bottom: 30px;
 	}
-	.page-seminars__main a{
-		margin-top: 30px;
+	.page-meeting__list ol{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.page-meeting__info .wrapper{
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+	}
+	.page-team li{
+		display: block;
+		margin: 50px 0;
+	}
+	.page-team .li__block:after{
+		left: 50%;
+		transform: translateX(-50%) rotate(90deg);
+		bottom: -30px;
+	}
+	.page-team .li__block{
+		margin: 20px 0;
+	}
+	.page-team a{
+		margin-top: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.page-team h2{
+		font-size: 30px;
 	}
 }
 
 @media screen and (max-width: 768px) {
+	.page-team .li__block{
+		height: auto;
+		padding: 20px
+	}
+	.page-tips__item .item__content{
+		display: block;
+	}
+	.page-tips{
+		padding-top: 70px;
+	}
+	.img-max-w{
+		&:first-child{
+			img{
+				width: 100%;
+			}
+		}
+		&:last-child{
+			img{
+				max-width: 158px;
+				width: 100%;
+			}
+		}
+	}
+	.page-marketing__list li{
+		width: 100%;
+		margin: 20px 0;
+	}
+	.page-marketing__black .black__block{
+		grid-gap: 15px;
+	}
+	.page-marketing__black .black__block_four{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.page-marketing__list ul{
+		display: block;
+		margin: 0;
+	}
+	.page-team .li__block b{
+		font-size: 20px;
+	}
+	.page-team .li__block span{
+		font-size: 16px;
+	}
 	.services__item{
 		width: calc(100% / 2 - 20px);
+	}
+	.page-meeting__black li{
+		width: calc(100% / 3 - 50px);
 	}
 	.page-seminars__info .info__block{
 		display: block;
@@ -139,10 +212,7 @@
 		font-size: 14px;
 		margin-bottom: 20px;
 	}
-	.page-index h1,
-	.page-first-time-here__main h1{
-		font-size: 24px;
-		line-height: normal;
+	.page-index h1{
 		margin-bottom: 20px;
 	}
 	.page-index__main .rht img{
@@ -157,6 +227,9 @@
 		font-size: 14px;
 		line-height: normal;
 	}
+	.pb-100{
+		padding-bottom: 80px;
+	}
 	.mb-100{
 		margin-bottom: 80px;
 	}
@@ -166,15 +239,115 @@
 }
 
 @media screen and (max-width: 576px) {
+	.pb-100{
+		padding-bottom: 50px
+	}
+	.page-tips{
+		padding-top: 40px;
+	}
 	.mb-100{
 		margin-bottom: 50px;
 	}
-	.page-seminars__main p{
-		font-size: 14px;
+	.page-marketing__black .black__block{
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
 	}
-	.page-seminars__main h1{
+	.page-marketing__black .black__block .img{
+		padding: 5px;
+	}
+	.page-marketing__black i{
+		font-size: 12px;
+	}
+	.page-marketing__black a{
+		margin-top: 20px;
+	}
+	.page-marketing__black{
+		padding-top: 20px;
+	}
+	.page-marketing__list li{
+		padding: 10px;
+		padding-left: 30px;
+	}
+	.page-marketing__list .li__top{
+		margin-left: -15px;
+	}
+	.page-marketing h1{
+		margin-bottom: 10px;
+	}
+	.page-marketing__list ul{
+		margin: -10px 0;
+	}
+	.page-marketing__list li{
+		margin: 10px 0;
+	}
+	.page-marketing__black h2{
 		font-size: 24px;
+	}
+	.page-marketing__black h3{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.page-team h2{
+		font-size: 24px;
+	}
+	.page-team h1{
 		margin-bottom: 20px;
+	}
+	.page-training,
+	.page-marketing,
+	.page-seminars,
+	.page-meeting,
+	.page-first-time-here,
+	.page-team{
+		padding-top: 20px;
+	}
+	.main h1{
+		font-size: 36px;
+	}
+	.main p{
+		font-size: 14px;
+		br{
+			display: none;
+		}
+	}
+	.page-meeting__black h2{
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	.page-meeting__black li{
+		width: calc(100% / 2 - 40px);
+		margin: 20px;
+	}
+	.page-meeting__list ol{
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+	.page-meeting__list li{
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.page-meeting__list li:before{
+		font-size: 60px;
+		line-height: normal;
+		top: 50%;
+		bottom: auto;
+		left: 20px;
+		transform: translateY(-50%);
+	}
+	.page-meeting__list p{
+		font-size: 16px;
+	}
+	.page-meeting .buttons{
+		display: block;
+		margin-top: 20px;
+		a{
+			margin: 10px 0;
+		}
 	}
 	.page-seminars__main a{
 		margin-top: 20px;
@@ -300,11 +473,10 @@
 	.black-items{
 		padding: 20px 0;
 	}
-	.page-training .subtitle,
-	.page-training__main p{
+	.page-training .subtitle{
 		font-size: 14px;
 	}
-	.page-tips__item .item__content *{
+	.page-tips__item .item__content .item__inner{
 		width: 100%;
 		margin: 10px 0;
 	}
